@@ -1,0 +1,649 @@
+@font-face {
+    font-family: 'Volte';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Volte Regular Italic'), url('../fonts/volte/Volte-Regular-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Volte';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Volte Regular'), url('../fonts/volte/Volte.woff') format('woff');
+}
+@font-face {
+    font-family: 'Volte';
+    font-style: italic;
+    font-weight: 200;
+    src: local('Volte Light Italic'), url('../fonts/volte/Volte-Light-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Volte';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Volte Light'), url('../fonts/volte/Volte-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Volte';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Volte Semibold Italic'), url('../fonts/volte/Volte-Semibold-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Volte';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Volte Semibold'), url('../fonts/volte/Volte-Semibold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Volte Bold Italic';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Volte Bold Italic'), url('../fonts/volte/Volte-Bold-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Volte Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Volte Bold'), url('../fonts/volte/Volte-Bold.woff') format('woff');
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v14/XRXV3I6Li01BKofIOOaBTMnFcQIG.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v14/XRXV3I6Li01BKofIMeaBTMnFcQIG.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v14/XRXV3I6Li01BKofIOuaBTMnFcQIG.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v14/XRXV3I6Li01BKofIO-aBTMnFcQIG.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v14/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofA6sKUbOvIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofA6sKUZevIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofA6sKUbuvIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofA6sKUb-vIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofA6sKUYevIWzgPDA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAjsOUbOvIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAjsOUZevIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAjsOUbuvIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAjsOUb-vIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAjsOUYevIWzgPDA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAksCUbOvIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAksCUZevIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAksCUbuvIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAksCUb-vIWzgPDEtj.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAksCUYevIWzgPDA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WhnGFq8Kk1doH.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WiHGFq8Kk1Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* Colors */
+  --primary:  #{color(primary)};
+  --secondary:  #{color(fontdark)};
+  --success:  #{color(success)};
+  --info:  #{color(info)};
+  --warning:  #{color(warning)};
+  --danger:  #{color(danger)};
+  --light:  #{color(light)};
+  --dark:  #{color(dark)};
+}
+
+body, html {
+  min-height: 100%;
+}
+
+body {
+  background-color: color(body);
+  font-size: $font_size;
+  font-weight: $font_weight;
+  font-family: $font_family;
+  color: color(font);
+}
+
+a.bb {
+  text-decoration: none;
+  border-bottom: 1px solid color(primary);
+  padding-bottom: 1px;
+}
+
+.form-divider {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ui-sortable-handle,
+.sort-handler {
+  cursor: move;
+}
+
+.text-job {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: color(fontdark);
+}
+
+.text-time {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.bullet, .slash {
+  display: inline;
+  margin: 0 4px;
+}
+
+.bullet:after {
+  content: '\2022';
+}
+
+.slash:after {
+  content: '/';
+}
+
+.login-brand {
+  margin: 20px 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #666;
+  text-align: center;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.budget-price {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  .budget-price-square {
+    width: 15px;
+    height: 3px;
+    background-color: #f9f9f9;
+  }
+  .budget-price-label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+}
+
+.gradient-bottom {
+  position: relative;
+  &:after {
+    content: ' ';
+    position: absolute;
+    bottom: 41px;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, .4), rgba(255,255,255, .8));
+    height: 60px;
+  }
+}
+
+.text-small {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.text-title {
+  font-size: 14px;
+  color: color(fontdark);
+  font-weight: 600;
+}
+
+.text-muted-transparent {
+  color: rgba(255,255,255,.8);
+}
+
+.img-shadow {
+  @include shadow;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  .color {
+    border-radius: 3px;
+    width: calc((100% / 4) - 10px);
+    padding: 10px;
+    height: 60px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+  }
+}
+
+blockquote {
+  padding: 20px;
+  padding-left: 40px;
+  font-style: oblique;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  position: relative;
+  font-family: 'Time new Romans';
+  font-size: 16px;
+  letter-spacing: .3px;
+  &:before {
+    content: '"';
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: .2;
+  }
+  .blockquote-footer {
+    margin-top: 10px;
+  }
+}
+
+.bg-whitesmoke {
+  background-color: color(whitesmoke) !important;
+}
+
+.ion {
+  font-size: 15px;
+}
+
+.fas, .far, .fab, .fal {
+  font-size: 13px;
+}
+
+#visitorMap {
+  height: 210px;
+}
+
+.sidebar-gone-show {
+  display: none !important;
+}
+
+pre {
+  border-radius: 3px;
+}
+
+.circle-step {
+  display: flex;
+  margin-bottom: 10px;
+  .circle-content {
+    margin-top: 3px;
+    margin-left: 13px;
+  }
+  .circle {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 11px;
+    text-align: center;
+    &.circle-primary {
+      border-color: color(primary);
+      color: color(primary);
+    }
+  }
+}
+
+.pe-none {
+  pointer-events: none;
+}
+
+.contact-map {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+#visitorMap2,
+#visitorMap3 { height: 350px; }
+
+.shadow-primary {
+  @include shadow-lighten(primary);
+}
+
+.shadow-secondary {
+  @include shadow-lighten(secondary, 7%);
+}
+
+.shadow-success {
+  @include shadow-lighten(success);
+}
+
+.shadow-warning {
+  @include shadow-lighten(warning);
+}
+
+.shadow-danger {
+  @include shadow-lighten(danger);
+}
+
+.shadow-info {
+  @include shadow-lighten(info);
+}
+
+.shadow-light {
+  @include shadow-lighten(light, 1%);
+}
+
+.shadow-dark {
+  @include shadow-lighten(dark, 40%);
+}
+
+.is-online {
+  width: 10px;
+  height: 10px;
+  background-color: color(success);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.gutters-xs {
+  margin-right: -0.25rem;
+  margin-left: -0.25rem;
+}
+
+.gutters-xs > .col,
+.gutters-xs > [class*="col-"] {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.beep {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    width: 7px;
+    height: 7px;
+    background-color: color(warning);
+    border-radius: 50%;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+  }
+  &.beep-sidebar {
+    &:after {
+      position: static;
+      margin-left: 10px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .fc-overflow {
+    width: 100%;
+    overflow: auto;
+    #myEvent {
+      width: 800px;
+    }
+  }
+  .ionicons li {
+    width: calc(100% / 4);
+  }
+  .icon-wrap {
+    width: 100%;
+  }
+}
+
+.background-walk-y {
+  @include background_walk;
+  background-size: 100%;
+}
+
+@include media-breakpoint-down(lg) {
+  .background-walk-y {
+    background-size: cover;
+  }
+}
+
+.background-walk-x {
+  @include background_walk(backgroundWalkX);
+}
+
+@keyframes backgroundWalkY {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes backgroundWalkX {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.overlay-gradient-bottom {
+  &:after {
+    @include overlay(1, false, linear-gradient(to bottom, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.65) 100%));
+  }
+}
+
+.overlay-gradient-top {
+  &:after {
+    @include overlay(1, false, linear-gradient(to top, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.65) 100%));
+  }
+}
+
+.index-1 { z-index: 1 !important; }
+.index-2 { z-index: 2 !important; }
+.index-3 { z-index: 3 !important; }
+.index-4 { z-index: 4 !important; }
+.index-5 { z-index: 5 !important; }
+
+.absolute-bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.bg-paypal {
+  @include paypal;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-visa {
+  @include visa;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-americanexpress {
+  @include americanexpress;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-dinersclub {
+  @include dinersclub;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-discover {
+  @include discover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-jcb {
+  @include jcb;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-mastercard {
+  @include mastercard;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

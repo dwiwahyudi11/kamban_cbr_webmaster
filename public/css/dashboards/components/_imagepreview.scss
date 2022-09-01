@@ -1,0 +1,66 @@
+.image-preview, #callback-preview {
+  min-width: 100%;
+  min-height: 200px;
+  border: 2px dashed #ddd;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  color: #ecf0f1;
+
+  input {
+      line-height: 200px;
+      font-size: 200px;
+      position: absolute;
+      opacity: 0;
+      z-index: 10;
+    }
+
+    label {
+      position: absolute;
+      z-index: 5;
+      opacity: 0.8;
+      cursor: pointer;
+      background-color: #bdc3c7;
+      width: 150px;
+      height: 50px;
+      font-size: 12px;
+      line-height: 50px;
+      text-transform: uppercase;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      text-align: center;
+    }
+
+    .remove-image {
+        min-width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: rgba(color(danger), 0.5);
+        color: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.audio-preview {
+  background: #ffffff;
+  width: auto;
+  padding: 20px;
+  display: inline-block;
+}
+
+.audio-upload {
+  cursor: pointer;
+  background-color: #bdc3c7;
+  color: #ecf0f1;
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}

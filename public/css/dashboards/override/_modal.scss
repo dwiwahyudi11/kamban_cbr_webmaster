@@ -1,0 +1,77 @@
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 25px;
+}
+
+.modal-body {
+  padding-top: 15px;
+}
+
+.modal-footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 5px;
+  h5 {
+    font-size: 18px;
+  }
+}
+
+.modal-footer {
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+}
+
+.modal-content {
+  max-width: 100%;
+  border: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .05);
+}
+
+.modal{
+    &.show {
+    	.modal-content {
+    	  box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+    	}
+    }
+}
+
+.modal-progress {
+  .modal-content {
+    position: relative;
+    &:after {
+      @include overlay(999);
+      @include background_spinner;
+      border-radius: 3px;
+    }
+  }
+}
+
+.modal-part {
+  display: none;
+}
+
+@include media-breakpoint-up(lg) {
+  .modal-lg,
+  .modal-xl {
+    max-width: 800px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .modal-xl { max-width: 1140px; }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .modal-fullscreen#{$infix} {
+      @include modal-fullscreen();
+    }
+  }
+}

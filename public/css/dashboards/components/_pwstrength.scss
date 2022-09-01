@@ -1,0 +1,57 @@
+.pwindicator {
+  margin-top: 4px;
+  width: 100%;
+  .bar {
+    height: 2px;
+  }
+}
+
+.pw-very-weak {
+  .bar {
+    background: #d00;
+    width: 20%;
+  }
+  .label {
+    color: #d00;
+  }
+}
+
+.pw-weak {
+  .bar {
+    background: #d00;
+    width: 40%;
+  }
+  .label {
+    color: #d00;
+  }
+}
+
+.pw-mediocre {
+  .bar {
+    background: #f3f01a;
+    width: 60%;
+  }
+  .label {
+    color: #f3f01a;
+  }
+}
+
+.pw-strong {
+  .bar {
+    background: #f3b31a;
+    width: 80%;
+  }
+  .label {
+    color: #f3b31a;
+  }
+}
+
+.pw-very-strong {
+  .bar {
+    background: #0d0;
+    width: 100%;
+  }
+  .label {
+    color: #0d0;
+  }
+}

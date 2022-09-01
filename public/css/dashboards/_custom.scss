@@ -1,0 +1,121 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+body {
+    &#bg-gradient {
+        background: linear-gradient(90deg, #ededed, #dbdbd9) !important;
+    }
+}
+
+#front {
+    .navbar {
+        &-brand {
+            letter-spacing: 0px;
+            margin-right: 0;
+            line-height: 1;
+        }
+    }
+
+    .main-sidebar {
+        .sidebar-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            margin-bottom: 1em;
+        }
+    }
+
+    .dropdown-menu {
+        min-width: 400px;
+        max-width: 100%;
+    }
+}
+
+#login-brand {
+    text-align: center;
+    margin-bottom: 16px;
+    
+    img {
+        max-height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 27px;
+        color: color(primary);
+        margin-bottom: 0px;
+        margin-top: 8px;
+    }
+    h2 {
+        font-size: 22px;
+        color: color(dark);
+    }
+}
+
+#login-bg {
+    height: 100%;
+    background: url('../images/login-bg.jpg') no-repeat center right;
+    background-size: cover;
+}
+
+.navbar {
+
+    &-bg {
+        background-color: color(success);
+    }
+
+    &.main-navbar {
+        border-bottom: 5px solid color(danger);
+    }
+    &-brand {
+        h1 {
+            margin: 0;
+            font-size: 0.85em;
+        }
+        h3 {
+            margin: 0;
+            font-size: 0.6em;
+            letter-spacing: 1.5px;
+            
+        }
+
+    }
+}
+
+.sidebar {
+    &-brand {
+        img {
+            max-height: 48px;
+        }
+    }
+}
+
+.simple-footer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.table-nonfluid {
+   width: auto !important;
+}
+
+.masthead {
+    min-height: 450px;
+    height: 60vh;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        background-color: #212529;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+}
